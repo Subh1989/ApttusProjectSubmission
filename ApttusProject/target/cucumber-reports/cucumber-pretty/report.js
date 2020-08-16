@@ -61,7 +61,7 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "user validates that the product is successfully added to the cart",
+  "name": "user validates that the product is successfully added to the cart and clicks on proceed to checkout",
   "keyword": "And "
 });
 formatter.examples({
@@ -148,28 +148,28 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "user validates that the product is successfully added to the cart",
+  "name": "user validates that the product is successfully added to the cart and clicks on proceed to checkout",
   "keyword": "And "
 });
 formatter.match({
   "location": "StepDefination.user_has_invoked_the_browser()"
 });
 formatter.result({
-  "duration": 5869640400,
+  "duration": 5947933300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_opens_the_required_url()"
 });
 formatter.result({
-  "duration": 7887227400,
+  "duration": 5668046600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_sign_in()"
 });
 formatter.result({
-  "duration": 6245867000,
+  "duration": 1526553100,
   "status": "passed"
 });
 formatter.match({
@@ -186,53 +186,53 @@ formatter.match({
   "location": "StepDefination.user_enters_and_and_click_login_button(String,String)"
 });
 formatter.result({
-  "duration": 2885499900,
+  "duration": 2609150400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_should_log_in_successfully()"
 });
 formatter.result({
-  "duration": 30236000,
+  "duration": 30659100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_selects_the_category_as_tshirts()"
 });
 formatter.result({
-  "duration": 3166742200,
+  "duration": 2564091400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_validates_the_required_product_is_displayed()"
 });
 formatter.result({
-  "duration": 34017400,
+  "duration": 33303400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_the_product()"
 });
 formatter.result({
-  "duration": 3531603000,
+  "duration": 2397351200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_add_to_cart()"
 });
 formatter.result({
-  "duration": 67097200,
+  "duration": 58817000,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefination.user_validates_that_the_product_is_successfully_added_to_the_cart()"
+  "location": "StepDefination.user_validates_that_the_product_is_successfully_added_to_the_cart_and_clicks_on_proceed_to_checkout()"
 });
 formatter.result({
-  "duration": 1978788300,
+  "duration": 3265957000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 639295700,
+  "duration": 656319100,
   "status": "passed"
 });
 });

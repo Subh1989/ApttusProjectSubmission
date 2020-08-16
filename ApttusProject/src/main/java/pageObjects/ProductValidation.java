@@ -45,6 +45,9 @@ public class ProductValidation extends TestPage{
 	@FindBy(id = "layer_cart_product_price")
 	private WebElement totalNumberMessage;
 	
+	@FindBy(css = "[class='button-container'] a")
+	private WebElement proceedToCheckout;
+	
 	public void productValidation() throws InterruptedException
 	{
 		initPageElements();
@@ -66,6 +69,12 @@ public class ProductValidation extends TestPage{
 		}
 		Assert.assertEquals(quantityNumberMessage.getText().trim(), "1");
 		Assert.assertEquals(totalNumberMessage.getText().trim(), "$16.51");
+	}
+	
+	public void clickProceedToCheckout()
+	{
+		initPageElements();
+		proceedToCheckout.click();
 	}
 	
 

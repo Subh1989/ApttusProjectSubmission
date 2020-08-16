@@ -79,11 +79,12 @@ public class StepDefination extends Base{
     	hp.clickAddtoCart();
     }
 
-    @And("^user validates that the product is successfully added to the cart$")
-    public void user_validates_that_the_product_is_successfully_added_to_the_cart() throws Throwable {
+    @And("^user validates that the product is successfully added to the cart and clicks on proceed to checkout$")
+    public void user_validates_that_the_product_is_successfully_added_to_the_cart_and_clicks_on_proceed_to_checkout() throws Throwable {
      
     	pv = new ProductValidation(driver);
     	pv.productValidation();
+    	pv.clickProceedToCheckout();
     }
 
     @After

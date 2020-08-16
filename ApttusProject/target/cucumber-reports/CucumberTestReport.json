@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 639295700,
+              "duration": 656319100,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5869640400,
+              "duration": 5947933300,
               "status": "passed"
             },
             "line": 4,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 7887227400,
+              "duration": 5668046600,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 6245867000,
+              "duration": 1526553100,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 2885499900,
+              "duration": 2609150400,
               "status": "passed"
             },
             "line": 7,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 30236000,
+              "duration": 30659100,
               "status": "passed"
             },
             "line": 8,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 3166742200,
+              "duration": 2564091400,
               "status": "passed"
             },
             "line": 9,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 34017400,
+              "duration": 33303400,
               "status": "passed"
             },
             "line": 10,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 3531603000,
+              "duration": 2397351200,
               "status": "passed"
             },
             "line": 11,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 67097200,
+              "duration": 58817000,
               "status": "passed"
             },
             "line": 12,
@@ -145,13 +145,13 @@
           },
           {
             "result": {
-              "duration": 1978788300,
+              "duration": 3265957000,
               "status": "passed"
             },
             "line": 13,
-            "name": "user validates that the product is successfully added to the cart",
+            "name": "user validates that the product is successfully added to the cart and clicks on proceed to checkout",
             "match": {
-              "location": "StepDefination.user_validates_that_the_product_is_successfully_added_to_the_cart()"
+              "location": "StepDefination.user_validates_that_the_product_is_successfully_added_to_the_cart_and_clicks_on_proceed_to_checkout()"
             },
             "keyword": "And "
           }

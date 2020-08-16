@@ -10,7 +10,7 @@ And user selects the category as TShirts
 And user validates the required product is displayed
 And user clicks on the product
 And user clicks on ADD to Cart
-And user validates that the product is successfully added to the cart
+And user validates that the product is successfully added to the cart and clicks on proceed to checkout
 
 Examples:
 |username				|password	|
