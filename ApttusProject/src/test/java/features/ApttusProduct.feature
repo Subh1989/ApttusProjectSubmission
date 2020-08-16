@@ -1,6 +1,6 @@
-Feature: Successful Login
+Feature: Product details validation
 
-Scenario Outline: Perform login functionality
+Scenario Outline: Login to the application and perform product details validation after adding to cart
 Given user has invoked the browser
 And user opens the required url
 When user clicks on sign in

@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ApttusProduct.feature");
 formatter.feature({
   "line": 1,
-  "name": "Successful Login",
+  "name": "Product details validation",
   "description": "",
-  "id": "successful-login",
+  "id": "product-details-validation",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 3,
-  "name": "Perform login functionality",
+  "name": "Login to the application and perform product details validation after adding to cart",
   "description": "",
-  "id": "successful-login;perform-login-functionality",
+  "id": "product-details-validation;login-to-the-application-and-perform-product-details-validation-after-adding-to-cart",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
@@ -68,7 +68,7 @@ formatter.examples({
   "line": 15,
   "name": "",
   "description": "",
-  "id": "successful-login;perform-login-functionality;",
+  "id": "product-details-validation;login-to-the-application-and-perform-product-details-validation-after-adding-to-cart;",
   "rows": [
     {
       "cells": [
@@ -76,7 +76,7 @@ formatter.examples({
         "password"
       ],
       "line": 16,
-      "id": "successful-login;perform-login-functionality;;1"
+      "id": "product-details-validation;login-to-the-application-and-perform-product-details-validation-after-adding-to-cart;;1"
     },
     {
       "cells": [
@@ -84,16 +84,16 @@ formatter.examples({
         "jetblue"
       ],
       "line": 17,
-      "id": "successful-login;perform-login-functionality;;2"
+      "id": "product-details-validation;login-to-the-application-and-perform-product-details-validation-after-adding-to-cart;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
   "line": 17,
-  "name": "Perform login functionality",
+  "name": "Login to the application and perform product details validation after adding to cart",
   "description": "",
-  "id": "successful-login;perform-login-functionality;;2",
+  "id": "product-details-validation;login-to-the-application-and-perform-product-details-validation-after-adding-to-cart;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -155,21 +155,21 @@ formatter.match({
   "location": "StepDefination.user_has_invoked_the_browser()"
 });
 formatter.result({
-  "duration": 5905046300,
+  "duration": 5876611800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_opens_the_required_url()"
 });
 formatter.result({
-  "duration": 5513201100,
+  "duration": 6509105700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_sign_in()"
 });
 formatter.result({
-  "duration": 1576276700,
+  "duration": 10936807200,
   "status": "passed"
 });
 formatter.match({
@@ -186,53 +186,53 @@ formatter.match({
   "location": "StepDefination.user_enters_and_and_click_login_button(String,String)"
 });
 formatter.result({
-  "duration": 3079277400,
+  "duration": 14339305500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_should_log_in_successfully()"
 });
 formatter.result({
-  "duration": 32724400,
+  "duration": 37998200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_selects_the_category_as_tshirts()"
 });
 formatter.result({
-  "duration": 2534573800,
+  "duration": 10051458900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_validates_the_required_product_is_displayed()"
 });
 formatter.result({
-  "duration": 31756300,
+  "duration": 41121600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_the_product()"
 });
 formatter.result({
-  "duration": 2246412500,
+  "duration": 10230813200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_add_to_cart()"
 });
 formatter.result({
-  "duration": 71572500,
+  "duration": 67689600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_validates_that_the_product_is_successfully_added_to_the_cart()"
 });
 formatter.result({
-  "duration": 1989335900,
+  "duration": 6741840000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 645944700,
+  "duration": 661758200,
   "status": "passed"
 });
 });
