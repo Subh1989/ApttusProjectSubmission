@@ -1,6 +1,9 @@
 package pageObjects;
 
 import org.testng.Assert;
+
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +27,7 @@ public class ProductValidation extends TestPage{
 	@FindBy(css = "[id = 'layer_cart']")
 	private WebElement popup;
 	
-	@FindBy(xpath = "//div[contains(@class,'layer_cart_product')]/h2")
+	@FindBy(css = "[class*='layer_cart_product'] h2")
 	private WebElement message;
 	
 	@FindBy(id = "layer_cart_product_title")
@@ -33,15 +36,12 @@ public class ProductValidation extends TestPage{
 	@FindBy(id = "layer_cart_product_attributes")
 	private WebElement colourMessage;
 	
-	@FindBy(xpath = "//div[@class='layer_cart_product_info']/div[1]/strong")
-	private WebElement quantityMessage;
+	@FindBy(css = "[class='dark']")
+	private List<WebElement> titles;
 	
 	@FindBy(id = "layer_cart_product_quantity")
 	private WebElement quantityNumberMessage;
-	
-	@FindBy(xpath = "//div[@class='layer_cart_product_info']/div[2]/strong")
-	private WebElement totalMessage;
-	
+
 	@FindBy(id = "layer_cart_product_price")
 	private WebElement totalNumberMessage;
 	
@@ -53,9 +53,18 @@ public class ProductValidation extends TestPage{
 		Assert.assertEquals(message.getText(), product.trim());
 		Assert.assertEquals(productMessage.getText().trim(), "Faded Short Sleeve T-shirts");
 		Assert.assertEquals(colourMessage.getText(), "Orange, S");
-		Assert.assertEquals(quantityMessage.getText().trim(), "Quantity");
+		for(int i=0; i<titles.size(); i++)
+		{
+			if(titles.get(i).getText().contains("Quantity"))
+			{
+				Assert.assertTrue(true);
+			}
+			else if(titles.get(i).getText().contains("Total"))
+			{
+				Assert.assertTrue(true);
+			}
+		}
 		Assert.assertEquals(quantityNumberMessage.getText().trim(), "1");
-		Assert.assertEquals(totalMessage.getText().trim(), "Total");
 		Assert.assertEquals(totalNumberMessage.getText().trim(), "$16.51");
 	}
 	

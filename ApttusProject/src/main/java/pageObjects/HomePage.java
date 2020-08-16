@@ -1,3 +1,4 @@
+
 package pageObjects;
 
 import org.testng.Assert;
@@ -20,16 +21,16 @@ public class HomePage extends TestPage{
 	}
 
 	
-	@FindBy(xpath = "//ul[contains(@class,'menu-content')]/li[3]/a")
+	@FindBy(css = "li:nth-of-type(3) a[title='T-shirts']")
 	private WebElement product;
 	
-	@FindBy(xpath = "//h5[@itemprop='name']/a")
+	@FindBy(css = "[itemprop='name'] a")
 	private WebElement displayProduct;
 	
 	@FindBy(css = "[class='product_img_link'] img")
 	private WebElement itemSelect;
 	
-	@FindBy(xpath = "//p[@id='add_to_cart']/button/span")
+	@FindBy(css = "[id='add_to_cart'] button span")
 	private WebElement addToCart;
 	
 	public void selectProduct()
