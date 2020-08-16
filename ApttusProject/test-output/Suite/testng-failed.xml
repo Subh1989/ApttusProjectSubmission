@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="restAPITesting.ApttusStationAPIValidation">
+      <class name="cucumber.Options.TestRunner">
         <methods>
-          <include name="getStations"/>
-          <include name="verifyStationNotFound"/>
-          <include name="registerTwoStationsWithValidKey"/>
-          <include name="DeleteStations"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- restAPITesting.ApttusStationAPIValidation -->
+      </class> <!-- cucumber.Options.TestRunner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

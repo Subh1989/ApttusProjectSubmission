@@ -2,41 +2,69 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30125" started-at="2020-08-16T09:16:20Z" finished-at="2020-08-16T09:16:50Z">
+  <suite name="Suite" duration-ms="29160" started-at="2020-08-16T09:53:36Z" finished-at="2020-08-16T09:54:05Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@1ed4004b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="30125" started-at="2020-08-16T09:16:20Z" finished-at="2020-08-16T09:16:50Z">
+    <test name="Test" duration-ms="29160" started-at="2020-08-16T09:53:36Z" finished-at="2020-08-16T09:54:05Z">
       <class name="restAPITesting.ApttusStationAPIValidation">
-        <test-method status="PASS" signature="registerWeatherWithoutAPIKey()[pri:1, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="registerWeatherWithoutAPIKey" duration-ms="1884" started-at="2020-08-16T09:16:45Z" finished-at="2020-08-16T09:16:47Z">
+        <test-method status="PASS" signature="registerWeatherWithoutAPIKey()[pri:1, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="registerWeatherWithoutAPIKey" duration-ms="1935" started-at="2020-08-16T09:54:00Z" finished-at="2020-08-16T09:54:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWeatherWithoutAPIKey -->
-        <test-method status="PASS" signature="registerTwoStationsWithValidKey()[pri:2, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="registerTwoStationsWithValidKey" duration-ms="966" started-at="2020-08-16T09:16:47Z" finished-at="2020-08-16T09:16:48Z">
+        <test-method status="PASS" signature="registerTwoStationsWithValidKey(java.lang.String)[pri:2, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="registerTwoStationsWithValidKey" duration-ms="981" started-at="2020-08-16T09:54:02Z" data-provider="getKey" finished-at="2020-08-16T09:54:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[da76ae01115dfd97f7bb5d3c8483b5b4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTwoStationsWithValidKey -->
-        <test-method status="PASS" signature="getStations()[pri:3, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="getStations" duration-ms="470" started-at="2020-08-16T09:16:48Z" finished-at="2020-08-16T09:16:49Z">
+        <test-method status="PASS" signature="getStations(java.lang.String)[pri:3, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="getStations" duration-ms="468" started-at="2020-08-16T09:54:03Z" data-provider="getKey" finished-at="2020-08-16T09:54:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[da76ae01115dfd97f7bb5d3c8483b5b4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStations -->
-        <test-method status="PASS" signature="DeleteStations()[pri:4, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="DeleteStations" duration-ms="893" started-at="2020-08-16T09:16:49Z" finished-at="2020-08-16T09:16:49Z">
+        <test-method status="PASS" signature="DeleteStations(java.lang.String)[pri:4, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="DeleteStations" duration-ms="903" started-at="2020-08-16T09:54:04Z" data-provider="getKey" finished-at="2020-08-16T09:54:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[da76ae01115dfd97f7bb5d3c8483b5b4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteStations -->
-        <test-method status="PASS" signature="verifyStationNotFound()[pri:5, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="verifyStationNotFound" duration-ms="480" started-at="2020-08-16T09:16:49Z" finished-at="2020-08-16T09:16:50Z">
+        <test-method status="PASS" signature="verifyStationNotFound(java.lang.String)[pri:5, instance:restAPITesting.ApttusStationAPIValidation@ff5b51f]" name="verifyStationNotFound" duration-ms="490" started-at="2020-08-16T09:54:05Z" data-provider="getKey" finished-at="2020-08-16T09:54:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[da76ae01115dfd97f7bb5d3c8483b5b4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStationNotFound -->
       </class> <!-- restAPITesting.ApttusStationAPIValidation -->
       <class name="cucumber.Options.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@1ed4004b]" name="setUpClass" is-config="true" duration-ms="190" started-at="2020-08-16T09:16:20Z" finished-at="2020-08-16T09:16:20Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@1ed4004b]" name="setUpClass" is-config="true" duration-ms="180" started-at="2020-08-16T09:53:36Z" finished-at="2020-08-16T09:53:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@1ed4004b]" name="feature" duration-ms="25147" started-at="2020-08-16T09:16:20Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-08-16T09:16:45Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@1ed4004b]" name="feature" duration-ms="24115" started-at="2020-08-16T09:53:36Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-08-16T09:54:00Z">
           <params>
             <param index="0">
               <value>
@@ -47,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@1ed4004b]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2020-08-16T09:16:45Z" finished-at="2020-08-16T09:16:45Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@1ed4004b]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2020-08-16T09:54:00Z" finished-at="2020-08-16T09:54:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
