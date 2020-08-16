@@ -155,21 +155,21 @@ formatter.match({
   "location": "StepDefination.user_has_invoked_the_browser()"
 });
 formatter.result({
-  "duration": 5876611800,
+  "duration": 5869640400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_opens_the_required_url()"
 });
 formatter.result({
-  "duration": 6509105700,
+  "duration": 7887227400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_sign_in()"
 });
 formatter.result({
-  "duration": 10936807200,
+  "duration": 6245867000,
   "status": "passed"
 });
 formatter.match({
@@ -186,53 +186,53 @@ formatter.match({
   "location": "StepDefination.user_enters_and_and_click_login_button(String,String)"
 });
 formatter.result({
-  "duration": 14339305500,
+  "duration": 2885499900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_should_log_in_successfully()"
 });
 formatter.result({
-  "duration": 37998200,
+  "duration": 30236000,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_selects_the_category_as_tshirts()"
 });
 formatter.result({
-  "duration": 10051458900,
+  "duration": 3166742200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_validates_the_required_product_is_displayed()"
 });
 formatter.result({
-  "duration": 41121600,
+  "duration": 34017400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_the_product()"
 });
 formatter.result({
-  "duration": 10230813200,
+  "duration": 3531603000,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_clicks_on_add_to_cart()"
 });
 formatter.result({
-  "duration": 67689600,
+  "duration": 67097200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination.user_validates_that_the_product_is_successfully_added_to_the_cart()"
 });
 formatter.result({
-  "duration": 6741840000,
+  "duration": 1978788300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 661758200,
+  "duration": 639295700,
   "status": "passed"
 });
 });

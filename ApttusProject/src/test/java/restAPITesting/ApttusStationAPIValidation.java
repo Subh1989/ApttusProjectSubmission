@@ -1,5 +1,6 @@
 package restAPITesting;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import resources.Utils;
@@ -15,8 +16,6 @@ import org.testng.annotations.Test;
 
 public class ApttusStationAPIValidation extends Utils{
 	
-	String APP_URI = "http://api.openweathermap.org/data/3.0/stations";
-	
 	String validID1;
 	String validID2;
 
@@ -24,9 +23,10 @@ public class ApttusStationAPIValidation extends Utils{
 	@Test(priority=1)
 	public void registerWeatherWithoutAPIKey() throws IOException
 	{
+		RestAssured.baseURI = getGlobalValues();
 		
 		String response = given().log().all().contentType(ContentType.JSON)
-		.body(payload.getPayload1()).when().post(APP_URI)
+		.body(payload.getPayload1()).when().post(getResources())
 		.then().assertThat().statusCode(401).extract().response().asString();
 		
 		System.out.println(response);
@@ -42,7 +42,7 @@ public class ApttusStationAPIValidation extends Utils{
 	{
 		
 		String response1 = given().log().all().queryParam("appid", Key).contentType(ContentType.JSON)
-				.body(payload.getPayload1()).when().post(APP_URI)
+				.body(payload.getPayload1()).when().post(getResources())
 				.then().assertThat().statusCode(201).extract().response().asString();
 		
 		System.out.println(response1);
@@ -51,7 +51,7 @@ public class ApttusStationAPIValidation extends Utils{
 		 validID1 = js1.getString("ID");
 		
 		String response2 = given().log().all().queryParam("appid", Key).contentType(ContentType.JSON)
-				.body(payload.getPayload2()).when().post(APP_URI)
+				.body(payload.getPayload2()).when().post(getResources())
 				.then().assertThat().statusCode(201).extract().response().asString();
 		
 		System.out.println(response2);
@@ -66,7 +66,7 @@ public class ApttusStationAPIValidation extends Utils{
 	public void getStations(String Key)
 	{
 		String response1 = given().log().all().queryParam("appid", Key).contentType(ContentType.JSON)
-				.when().get(APP_URI)
+				.when().get(getResources())
 				.then().assertThat().statusCode(200).extract().response().asString();
 		
 		System.out.println(response1);
@@ -77,12 +77,12 @@ public class ApttusStationAPIValidation extends Utils{
 	public void DeleteStations(String Key)
 	{
 		given().log().all().queryParam("appid", Key).contentType(ContentType.JSON)
-				.when().delete(APP_URI+"/"+validID1)
+				.when().delete(getResources()+"/"+validID1)
 				.then().assertThat().statusCode(204).extract().response();
 
 		
 		given().log().all().queryParam("appid", Key).contentType(ContentType.JSON)
-				.when().delete(APP_URI+"/"+validID2)
+				.when().delete(getResources()+"/"+validID2)
 				.then().assertThat().statusCode(204).extract().response();
 
 	}
@@ -92,7 +92,7 @@ public class ApttusStationAPIValidation extends Utils{
 	public void verifyStationNotFound(String Key)
 	{
 		String response1 = given().log().all().queryParam("appid", Key).contentType(ContentType.JSON)
-				.when().delete(APP_URI+"/"+validID2)
+				.when().delete(getResources()+"/"+validID2)
 				.then().assertThat().statusCode(404).extract().response().asString();
 		
 		JsonPath js2 = getJsonPath(response1);

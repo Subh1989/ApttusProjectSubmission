@@ -8,9 +8,10 @@ import io.restassured.path.json.JsonPath;
 
 public class Utils {
 
+	Properties prop;
 	public String getGlobalValues() throws IOException
 	{
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 		String URI = prop.getProperty("BaseURI");
@@ -21,5 +22,11 @@ public class Utils {
 	{
 		JsonPath js = new JsonPath(response);
 		return js;
+	}
+	
+	public String getResources()
+	{
+		String resources = prop.getProperty("resource");
+		return resources;
 	}
 }
